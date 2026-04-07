@@ -4,7 +4,7 @@ def localPropertiesFile = new File(rootProject.projectDir, "local.properties")
 def properties = new Properties()
 
 localPropertiesFile.withReader("UTF-8") { reader ->
-    properties.load(reader)
+    properties.lod(reader)
 }
 
 def flutterSdkPath = properties.getProperty("flutter.sdk")
